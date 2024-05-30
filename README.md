@@ -7,3 +7,5 @@ openssl req -newkey rsa:4096 -nodes -sha256 -keyout 192.168.10.40.crt
 ´´html, nginx e cert´´
 
 #Copie o arquivo default.conf do nginx para ssl.conf, e o edite.  Após isso, ao subir o compose, o SSL já estará ativo.
+
+#Foram adicionadas algumas linhas no arquivo ssl.conf, a fim de aumentar a segurança, registrando o endereço e o protocolo de utilizados nas requisições.
